@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Bazhane</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper-page">
+		<div class="wrapper-page__content">
+			<!-- CUSTOM HTML -->
+			<div class="container logo-con">
+				<div class="logo">
+					<a href="index.html">
+						<!-- <img src="images/dest/icon/logo.svg" alt="Логотип"> -->
+						<svg viewBox="0 0 305 35" width="100%" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)" fill="#1A1A1A">
+								<path
+									d="M19.572 34.106c.878-.256 1.506-.639 2.259-1.022.627-.383 1.254-.894 1.63-1.405.377-.511.753-1.15 1.004-1.66.251-.64.377-1.15.377-1.789s-.126-1.277-.377-1.916c-.25-.639-.627-1.15-1.129-1.66-.502-.512-1.255-.895-2.007-1.278-.879-.383-1.882-.766-3.137-.894l-2.007-.383 2.007-.511c1.757-.511 3.137-1.278 4.015-2.172.878-1.022 1.38-2.044 1.38-3.321 0-2.044-1.004-3.704-3.137-4.854-2.132-1.15-5.394-1.788-9.66-1.788H0a3.73 3.73 0 011.004.51c.376.384.627.767.878 1.406.125.51.25 1.277.25 2.299v16.989c0 .894-.125 1.66-.25 2.3-.126.638-.376 1.021-.753 1.404-.25.256-.627.511-1.004.64H11.92c3.387-.129 6.022-.384 7.653-.895zM5.395 10.09l.376-.127c1.255-.256 2.635-.511 4.266-.511 1.506 0 2.886.127 4.015.51 1.129.384 2.133.767 2.886 1.278.752.51 1.38 1.277 1.881 1.916.377.766.628 1.533.628 2.427 0 1.788-.753 3.194-2.259 4.343-1.505 1.022-3.763 1.533-7.025 1.533-.879 0-1.757 0-2.51-.128-.753 0-1.38-.128-2.007-.255l-.502-.128V10.091h.25zm.502 23.76l-.377-.128V21.97l.377-.128c.376.128 1.003 0 1.63 0h2.51c1.756 0 3.262.128 4.517.511 1.254.383 2.383.767 3.262 1.405.878.639 1.505 1.278 2.007 2.172.377.766.627 1.66.627 2.554 0 .767-.25 1.661-.627 2.428-.376.766-1.004 1.405-1.756 1.916-.753.51-1.757 1.021-2.886 1.277-1.13.255-2.51.51-3.89.51a36.62 36.62 0 01-5.394-.766zm40.649-1.916a5.673 5.673 0 01-1.004 1.405c-.376.384-.878.64-1.38.895-.376.127-.752.255-1.129.255h7.277c-.125 0-.25 0-.376-.128a15.144 15.144 0 01-1.255-.383 1.29 1.29 0 01-.753-.639c-.125-.255-.125-.51-.125-.766 0-.511.25-1.405.753-2.427l2.258-4.343h12.672l2.007 3.96c.627 1.277 1.004 2.171 1.004 2.81 0 .383-.126 1.022-.879 1.405-.25.128-.752.383-1.254.383h9.284c-.125 0-.25 0-.376-.127-.502-.128-1.004-.384-1.506-.767-.376-.383-.878-.766-1.254-1.405-.377-.51-.753-1.277-1.255-2.171L58.59 9.069h-.251L47.55 30.02c-.377.766-.753 1.404-1.004 1.915zm10.79-18.394l6.022 11.88h-12.17l6.148-11.88zm59.595 17.372c-.502.767-1.004 1.278-1.631 1.789-.627.383-1.38.766-2.133.894-.753.128-1.631.255-2.635.255H96.857l20.45-24.27H95.602s-.25 4.088 0 3.577c.251-.639.628-1.277 1.13-1.66.501-.384 1.129-.767 2.007-.895a19.412 19.412 0 013.136-.255h10.916L92.215 34.36v.128h24.591s.501-4.087.125-3.577zm41.528-20.949c.251.128.502.256.753.511.251.256.376.511.502.767.125.255.125.639.251 1.022v9.324h-15.432v-7.791c0-1.278.125-2.172.251-2.683.125-.255.376-.51.627-.766.251-.128.502-.384.878-.511.251-.128.502-.128.753-.256h-8.531c.376.128.753.256 1.003.383.377.128.628.256.753.511.251.256.377.384.502.767.126.255.126.639.251 1.022V30.4c0 1.66-.251 2.683-.627 3.194-.377.51-1.004.766-1.757.894h8.532c-.377-.128-.753-.255-1.004-.383s-.502-.256-.753-.511c-.251-.128-.376-.383-.502-.767-.125-.255-.125-.638-.251-1.022V21.97h15.432v8.303c0 .894-.125 1.66-.251 2.171-.125.639-.376 1.022-.752 1.405-.377.256-.628.511-1.13.511h8.156c-.377-.127-.753-.255-1.004-.383-.377-.128-.627-.256-.753-.511-.251-.128-.376-.51-.502-.766-.125-.256-.125-.64-.251-1.022V13.54c0-1.405.126-2.171.251-2.682.126-.256.377-.511.628-.767.25-.128.501-.383.878-.51.251-.129.502-.129.753-.256h-8.532c.251.383.627.51.878.638zm28.857 21.971a5.682 5.682 0 01-1.004 1.405c-.376.384-.878.64-1.38.895-.376.127-.753.255-1.129.255h7.277c-.126 0-.251 0-.377-.128-.502-.127-.878-.255-1.254-.383a1.289 1.289 0 01-.753-.639c-.126-.255-.126-.51-.126-.766 0-.511.251-1.405.753-2.427l2.258-4.343h12.672l2.008 3.96c.627 1.277 1.003 2.171 1.003 2.81 0 .383-.125 1.022-.878 1.405-.251.128-.753.383-1.255.383h9.285c-.126 0-.251 0-.377-.127-.502-.128-1.003-.384-1.505-.767-.377-.383-.879-.766-1.255-1.405-.376-.51-.753-1.277-1.255-2.171L199.486 9.069h-.251l-10.79 20.95c-.502.766-.753 1.404-1.129 1.915zm10.789-18.394l6.023 11.88h-12.17l6.147-11.88zm62.104-3.96h-5.395c.377.128.753.256 1.13.511.376.256.627.767.752 1.278a9.3 9.3 0 01.251 2.171v15.967L237.25 9.58h-6.273.125c.502.128.878.256 1.255.384.376.127.627.255 1.003.51.251.128.628.384.879.64.376.255.752.638 1.129 1.149l.125.127v18.14c0 .893-.125 1.532-.251 2.17-.125.64-.376 1.023-.752 1.278-.377.256-.753.511-1.13.639h5.27c-.377-.128-.753-.256-1.004-.511-.376-.256-.627-.767-.753-1.278a9.355 9.355 0 01-.251-2.171V13.54L257.826 35h.125V13.668c0-.894.126-1.533.251-2.172.125-.51.376-1.021.753-1.277.376-.255.753-.51 1.254-.639zm42.784 22.738c-.377.383-.753.638-1.129.766-.377.255-.879.383-1.255.51-.502.129-1.004.256-1.631.256h-7.528c-.752 0-1.254 0-1.631-.127-.502-.128-.752-.256-1.003-.511-.251-.256-.377-.639-.377-1.15V21.588h8.532v-.64c-.377 0-.753.129-1.255.129h-7.277V10.219h9.034c1.003 0 2.007 0 2.634.128.753.128 1.38.255 1.882.638.502.384.878.895 1.129 1.405.126.256.251.64.377 1.022V9.58h-20.953c.628.128 1.255.384 1.631.767.502.51.753 1.533.753 3.32v16.734c0 1.278-.125 2.172-.251 2.683-.125.255-.376.51-.627.766s-.627.384-.878.511c-.251.128-.502.128-.753.256h21.329l1.505-4.854c-1.254 1.533-1.38 1.916-2.258 2.555zM64.488 0h4.517l-4.893 5.365h-3.513L64.488 0z" />
+							</g>
+							<defs>
+								<clipPath id="clip0">
+									<path fill="#fff" d="M0 0h305v35H0z" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<div class="filter-bg"></div>
+			<!-- Шапка -->
+			<header class="header">
+				<div class="menu">
+					<div class="container">
+						<div class="menu__inner">
+							<nav class="menu__nav">
+								<div class="menu-burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<ul class="menu__list">
+									<li class="menu__list-item one nav-item active"><a href="index.html">Главная</a></li>
+									<li class="menu__list-item two nav-item"><a href="new.html">Новинки</a></li>
+									<li class="menu__list-item three nav-item"><a href="catalog.html">Каталог</a></li>
+									<li class="menu__list-item four nav-item"><a href="contact.html">Контакты</a></li>
+									<li class="menu__list-item five nav-item"><a href="faq.html">FAQ</a></li>
+								</ul>
+								<div class="nav-indicator"></div>
+							</nav>
+							<div class="menu__info">
+								<div class="menu__search">
+									<form action="search.php">
+										<div class="menu__search-btn">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.625.811a4.818 4.818 0 014.817 4.818 4.818 4.818 0 01-8.23 3.388A4.818 4.818 0 015.625.811zm0-.803a5.62 5.62 0 10.03 11.241A5.62 5.62 0 005.626.01z" fill="#000"/><path d="M15.846 15.874a.603.603 0 01-.851 0L8.9 9.78l.851-.851 6.095 6.086a.618.618 0 010 .86z" fill="#000"/></svg>
+										</div>
+										<input class="input-search" type="text" placeholder="Search for...">
+									</form>
+								</div>
+								<a href="profile.html" class="menu__user"></a>
+								<a href="like.html" class="menu__like menu__link menu__link--empty"><span
+										class="menu__link-count">99</span></a>
+								<a href="basket.html" class="menu__basket menu__link active"><span
+										class="menu__link-count">01</span></a>
+								<a href="" class="language">
+									RUS
+								</a>
+							</div>
+							<!-- /.menu__info -->
+						</div>
+						<!-- /.menu__inner -->
+					</div>
+					<!-- /.container -->
+				</div>
+				<!-- /.menu -->
+			</header>
+			<!-- Шапка END -->
+
+			<!-- Главный экран -->
+			<div class="main ibg" style="background-image: url(images/dest/main/hero-bg.png);">
+				<a class="main__links-wrap" href="catalog.html"></a>
+				<div class="container">
+					<div class="main__inner">
+						<div class="main__title">Lookbook</div>
+						<div class="main__link">
+							<span class="main__link-before"></span>
+							смотреть все
+						</div>
+					</div>
+					<!-- /.header__inner -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- Главный экран END -->
+
+			<!-- Каталог на главной -->
+			<div class="main-catalog">
+				<div class="container">
+					<h2 class="main-catalog__title title2">Каталог</h2>
+					<div class="main-catalog__list main-catalog-slick">
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image" style="background-image: url(images/dest/main/coat.jpg);">
+							</div>
+							<div class="main-catalog__item-title">Пальто</div>
+						</a>
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image" style="background-image: url(images/dest/main/jackets.jpg);">
+							</div>
+							<div class="main-catalog__item-title">Куртки</div>
+						</a>
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image" style="background-image: url(images/dest/main/pants.jpg);">
+							</div>
+							<div class="main-catalog__item-title">Брюки</div>
+						</a>
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image" style="background-image: url(images/dest/main/blouses.jpg);">
+							</div>
+							<div class="main-catalog__item-title">Блузы</div>
+						</a>
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image"
+								style="background-image: url(images/dest/main/jackets-2.jpg);"></div>
+							<div class="main-catalog__item-title">Пиджаки</div>
+						</a>
+						<a href="#" class="main-catalog__item">
+							<div class="main-catalog__item-image"
+								style="background-image: url(images/dest/main/t-shirts.jpg);"></div>
+							<div class="main-catalog__item-title">Футболки</div>
+						</a>
+					</div>
+					<!-- /.main-catalog__list -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- Каталог на главной END -->
+
+			<!-- О нас -->
+			<div class="main-about">
+				<div class="main-about__item">
+					<div class="container">
+						<div class="main-about__inner">
+							<div class="main-about__imagebox">
+								<div class="main-about__image ibg" style="background-image: url(images/dest/main/about-1.jpg);">
+									<div class="main-about__imagebox-wrap">
+										<div class="main-about__imagebox-content">
+											<div class="main-about__imagebox-title">About</div>
+											<div class="main-about__imagebox-number">01</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-about__content">
+								<p>BAZHANE – это новый взгляд на принятую классику в мире дизайнерской одежды. Нашим основным
+									принципом является качество, а не популярность и известность производителя.</p>
+							</div>
+							<!-- /.main-about__content -->
+						</div>
+						<!-- /.main-about__inner -->
+					</div>
+					<!-- container -->
+				</div>
+				<!-- /.main-about__item -->
+				<div class="main-about__item">
+					<div class="container">
+						<div class="main-about__inner">
+							<div class="main-about__imagebox">
+								<div class="main-about__image ibg" style="background-image: url(images/dest/main/about-2.jpg);">
+									<div class="main-about__imagebox-wrap">
+										<div class="main-about__imagebox-content">
+											<div class="main-about__imagebox-title">History</div>
+											<div class="main-about__imagebox-number">02</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-about__content">
+								<p>Свой путь бренд начал в 2019 году. Первостепенная задача – привнести на рынок качественные,
+									стильные и доступные, для каждого, изделия.</p>
+							</div>
+							<!-- /.main-about__content -->
+						</div>
+						<!-- /.main-about__inner -->
+					</div>
+					<!-- container -->
+				</div>
+				<!-- /.main-about__item -->
+				<div class="main-about__item">
+					<div class="container">
+						<div class="main-about__inner">
+							<div class="main-about__imagebox">
+								<div class="main-about__image ibg" style="background-image: url(images/dest/main/about-3.jpg);">
+									<div class="main-about__imagebox-wrap">
+										<div class="main-about__imagebox-content">
+											<div class="main-about__imagebox-title">Love</div>
+											<div class="main-about__imagebox-number">03</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-about__content">
+								<p>Нашими ключевыми позициями являются классические пальто, кожаные куртки с акцентом
+									на практичность, костюмы, которые подчёркивают силуэт и женственность, а также тренчи,
+									базовые футболки, рубашки и платья-комбинации — вещи, которые никогда не выйдут из моды!</p>
+							</div>
+							<!-- /.main-about__content -->
+						</div>
+						<!-- /.main-about__inner -->
+					</div>
+					<!-- container -->
+				</div>
+				<!-- /.main-about__item -->
+				<div class="main-about__item">
+					<div class="container">
+						<div class="main-about__inner">
+							<div class="main-about__imagebox">
+								<div class="main-about__image ibg" style="background-image: url(images/dest/main/about-4.jpg);">
+									<div class="main-about__imagebox-wrap">
+										<div class="main-about__imagebox-content">
+											<div class="main-about__imagebox-title">Production</div>
+											<div class="main-about__imagebox-number">04</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-about__content">
+								<p>Наше производство находится в Турции и Украине. Пошивом занимаются специализированные
+									фабрики, оснащённые профессиональным оборудованием.
+									Мы отдаём предпочтение тканям из Италии, отбирая только натуральные и приятные на ощупь.
+								</p>
+							</div>
+							<!-- /.main-about__content -->
+						</div>
+						<!-- /.main-about__inner -->
+					</div>
+					<!-- container -->
+				</div>
+				<!-- /.main-about__item -->
+				<div class="main-about__item">
+					<div class="container">
+						<div class="main-about__inner">
+							<div class="main-about__imagebox">
+								<div class="main-about__image ibg" style="background-image: url(images/dest/main/about-5.jpg);">
+									<div class="main-about__imagebox-wrap">
+										<div class="main-about__imagebox-content">
+											<div class="main-about__imagebox-title">Inspiration</div>
+											<div class="main-about__imagebox-number">05</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-about__content">
+								<p>Вдохновение наша команда получает от&nbsp;общения&nbsp;с&nbsp;клиентами и от природы, именно поэтому сила
+									и красота природы являются ключевой нитью в нашей концепции. Комфорт клиента — наша главная
+									цель.
+								</p>
+							</div>
+							<!-- /.main-about__content -->
+						</div>
+						<!-- /.main-about__inner -->
+					</div>
+					<!-- container -->
+				</div>
+				<!-- /.main-about__item -->
+			</div>
+			<!-- О нас END -->
+
+			<div class="main-global-photo">
+				<img src="images/dest/main/about-finish.jpg" alt="">
+			</div>
+			<!-- /.main-global-photo -->
+		</div>
+		<!-- /.wrapper-page__content -->
+		<div class="wrapper-page__footer">
+			<!-- Подвал сайта -->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__brand">
+							<div class="footer__logo">
+								<a href="#"><img src="images/dest/icon/footer-logo.svg" alt=""></a>
+							</div>
+							<div class="footer__brand-social">
+								<a href="#" class="footer__brand-link">
+									<!-- <img src="images/dest/icon/instagram.svg" alt=""> -->
+									<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M19.45 15.96v.5h.016a3.52 3.52 0 01-3.506 3.04H4.04A3.523 3.523 0 01.5 15.96V4.04A3.523 3.523 0 014.04.5h11.87a3.523 3.523 0 013.54 3.54v11.92z"
+											stroke="#000" stroke-miterlimit="10" />
+										<path
+											d="M16.409 2.793a.894.894 0 00-.898.898c0 .499.399.898.898.898a.894.894 0 00.897-.898.894.894 0 00-.898-.898z"
+											fill="#000" />
+										<path
+											d="M15.11 10.017h0v.008a5.077 5.077 0 01-5.085 5.086 5.077 5.077 0 01-5.087-5.086c0-2.767 2.32-5.086 5.087-5.086 2.82 0 5.13 2.322 5.086 5.078z"
+											stroke="#000" stroke-miterlimit="10" /></svg>
+									<span>Instagram</span></a>
+								<a href="#" class="footer__brand-link">
+									<!-- <img src="images/dest/icon/facebook.svg" alt=""> -->
+									<svg width="10" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M2.018 3.873v2.754H0v3.366h2.018V20h4.143V9.994h2.78s.26-1.614.387-3.38h-3.15V4.313c0-.344.45-.807.898-.807h2.258V0h-3.07c-4.35 0-4.246 3.37-4.246 3.873z"
+											fill="#000" /></svg>
+									<span>Facebook</span></a>
+							</div>
+							<div class="link-developer"><a href="https://sideguide.ru/">Разработка и продвижение Sideguide</a>
+							</div>
+						</div>
+						<!-- /.footer__brand -->
+						<div class="footer__catalog">
+							<div class="footer__title">Каталог</div>
+							<ul class="footer__list footer__list-hover">
+								<li class="footer__list-item"><a href="#">Пальто</a></li>
+								<li class="footer__list-item"><a href="#">Блузы</a></li>
+								<li class="footer__list-item"><a href="#">Куртки</a></li>
+								<li class="footer__list-item"><a href="#">Брюки</a></li>
+								<li class="footer__list-item"><a href="#">Пиджаки</a></li>
+								<li class="footer__list-item"><a href="#">Футболки</a></li>
+							</ul>
+						</div>
+						<!-- /.footer__catalog -->
+						<div class="footer__info">
+							<div class="footer__title">Покупателям</div>
+							<ul class="footer__list footer__list-hover">
+								<li class="footer__list-item"><a href="information-pay.html">Оплата и доставка</a></li>
+								<li class="footer__list-item"><a href="condition-return.html">Возврат и обмен</a></li>
+								<li class="footer__list-item"><a href="faq.html">FAQ</a></li>
+								<li class="footer__list-item"><a href="public-offer.html">Публичная оферта</a></li>
+								<li class="footer__list-item"><a href="conf.html">Политика кон-ти</a></li>
+							</ul>
+						</div>
+						<!-- /.footer__info -->
+						<div class="footer__contact">
+							<div class="footer__title">Контакты</div>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:+380958455580">
+										<img src="images/dest/icon/icon-phone.svg" alt="">
+										<span>+38 (095) 845-55-80</span>
+									</a>
+								</li>
+								<li class="footer__list-item">
+									<div>
+										<img src="images/dest/icon/footer-home.svg" alt="">
+										<span>Киев, ул. Мечникова 7</span>
+									</div>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@bazhane.com">
+										<img src="images/dest/icon/footer-message.svg" alt="">
+										<span>info@bazhane.com</span>
+									</a>
+								</li>
+								<li class="footer__list-item">
+									<div>
+										<img src="images/dest/icon/footer-clock.svg" alt="">
+										<span>ПН-ПТ 10:00 - 20:00</span>
+									</div>
+								</li>
+								<li class="footer__list-item">
+									<div>СБ-ВС 11:00 - 20:00</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.footer__contact -->
+						<div class="footer__form">
+							<div class="footer__title">Подписаться на рассылку</div>
+							<div class="footer__form-subtitle">Будьте в курсе наших акций и поступлений</div>
+							<form action="mailer.php" method="POST">
+								<div class="footer__form-field">
+									<input required class="footer__form-input" type="email" placeholder="Укажите ваш e-mail">
+									<div class="footer__form-after"></div>
+								</div>
+								<button class="footer__form-btn btn">подписаться</button>
+							</form>
+							<p class="footer__form-agree">Нажимая кнопку Подписаться, я даю согласие
+								на обработку и передачу моих персональных данных</p>
+						</div>
+						<!-- /.footer__form -->
+					</div>
+					<!-- /.footer__inner -->
+				</div>
+				<!-- /.container -->
+			</footer>
+			<!-- Подвал сайта END -->
+
+		</div>
+		<!-- /.wrapper-page__footer -->
+	</div>
+	<!-- /.wrapper-page -->
+
+	<script src="js/app.min.js"></script>
+	<script src="js/intlTelInput.min.js"></script>
+
+</body>
+
+</html>
